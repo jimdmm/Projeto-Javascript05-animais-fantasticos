@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script> document.documentElement.className += ' js' </script>
 </head>
 <body>
-   <nav class="menu">
+   <nav class="menu js-menu">
        <ul>
            <li><a href="#animais">Animais</a></li>
            <li><a href="#faq">Faq</a></li>
@@ -18,7 +19,7 @@
    </nav>
    <section class="grid-section animais" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
-        <ul class="animais-lista">
+        <ul class="animais-lista js-tabmenu">
             <li>
                 <img src="img/imagem1.jpg">
             </li>
@@ -38,7 +39,7 @@
                 <img src="img/imagem6.jpg">
             </li>
         </ul>
-        <div class="animais-descricao">
+        <div class="animais-descricao js-tabcontent">
             <section>
                 <h2>Raposa</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde eum illum optio veniam error autem omnis
@@ -120,7 +121,7 @@
    </section>
 <section class="grid-section faq" id="faq">
     <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista">
+    <dl class="faq-lista js-accordion">
         <dt>Qual a idade dos animais?</dt>
         <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, corrupti? Nihil ut obcaecati libero.</dd>
         <dt>Eles são fantásticos?</dt>
