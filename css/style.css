@@ -269,26 +269,26 @@ body {
     }
 }
 
-.js .js-accordion dd {
+.js [data-anime="accordion"] dd {
     display: none;
 }
 
-.js .js-accordion dt {
+.js [data-anime="accordion"] dt {
     cursor: pointer;
 }
 
-.js .js-accordion dt::after {
+.js [data-anime="accordion"] dt::after {
     content: '▼';
     margin-left: 10px;
     cursor: pointer;
 }
 
-.js .js-accordion dt.ativo::after {
+.js [data-anime="accordion"] dt.ativo::after {
     content: '▲';
     cursor: pointer;
     
 }
-.js .js-accordion dd.ativo {
+.js [data-anime="accordion"] dd.ativo {
     display: block;
     animation: Slidedown .5s forwards;
 }

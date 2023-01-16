@@ -25,7 +25,7 @@ function initTabNav() {
 initTabNav();
 
 function initAccordion() {
-    const accordionList = document.querySelectorAll('.js-accordion dt');
+    const accordionList = document.querySelectorAll('[data-anime="accordion"] dt');
     const activeClass = 'ativo'
     if (accordionList.length) {
         accordionList[0].classList.add(activeClass)
